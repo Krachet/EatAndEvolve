@@ -68,7 +68,6 @@ GameObject:
   - component: {fileID: 9088507317503920970}
   - component: {fileID: 2915340563383172334}
   - component: {fileID: 3427153023455979876}
-  - component: {fileID: -3292412871547313598}
   m_Layer: 0
   m_Name: Drop
   m_TagString: Untagged
@@ -373,17 +372,3 @@ MonoBehaviour:
   target: {fileID: 0}
   isPicked: 0
   effect: {fileID: 2773676384388607713, guid: cd8fbe443228a024e98662006cc64dca, type: 3}
---- !u!114 &-3292412871547313598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2469481665894015840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d50de441be2e4981a2a5f46cf067f6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poolName: Drop
-  isPooled: 0

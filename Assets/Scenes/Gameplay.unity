@@ -17129,7 +17129,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1661120629}
-  - component: {fileID: 1661120628}
   - component: {fileID: 1661120630}
   m_Layer: 0
   m_Name: ObjectPooling
@@ -17138,55 +17137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1661120628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661120627}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd53aa52f082d402bbb1db7e3b67072a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poolInfo:
-  - poolName: BreakableObjects
-    prefab: {fileID: 6933150723872839089, guid: 169847c192a724e42a762ba76991818e, type: 3}
-    poolSize: 16
-    fixedSize: 0
-  - poolName: Enemy
-    prefab: {fileID: 7868280049966297985, guid: 7cc93da74d9c79945b703d8408a97035, type: 3}
-    poolSize: 20
-    fixedSize: 0
-  - poolName: VFX_Getting_Item
-    prefab: {fileID: 2773676384388607713, guid: cd8fbe443228a024e98662006cc64dca, type: 3}
-    poolSize: 10
-    fixedSize: 0
-  - poolName: FX_Hit_06
-    prefab: {fileID: 1732786791980720, guid: 9ebde599b31e0bf47a57770e369f0f19, type: 3}
-    poolSize: 20
-    fixedSize: 0
-  - poolName: FX_DarkExplosion_03 1
-    prefab: {fileID: 1224604301546646, guid: ed088aa881e18af4cb4cff6a61281b01, type: 3}
-    poolSize: 10
-    fixedSize: 0
-  - poolName: Drop
-    prefab: {fileID: 2469481665894015840, guid: 534baf37c94525b4ba0f0bbacead9433, type: 3}
-    poolSize: 10
-    fixedSize: 0
-  - poolName: Boss
-    prefab: {fileID: 7868280049966297985, guid: 4a145251a40f291439c7597e65732a5a, type: 3}
-    poolSize: 1
-    fixedSize: 0
-  - poolName: CoinFinishAnimation
-    prefab: {fileID: 7255054284303430679, guid: 0b92000772e6d1244ade0effa15f1bcb, type: 3}
-    poolSize: 10
-    fixedSize: 0
-  - poolName: FX_Explosion_02
-    prefab: {fileID: 1570132853851406, guid: e54c1326af3145741af76d3672b8c2d8, type: 3}
-    poolSize: 10
-    fixedSize: 0
 --- !u!4 &1661120629
 Transform:
   m_ObjectHideFlags: 0
@@ -22233,20 +22183,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2636851417149183645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7255054284390989360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d50de441be2e4981a2a5f46cf067f6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poolName: C
-  isPooled: 0
 --- !u!1001 &2864967659976684810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22316,7 +22252,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7255054284390989360}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5d171c7cea1c158499134caf1818c82c, type: 2}
   m_CullingMode: 0
@@ -22465,7 +22401,6 @@ GameObject:
   - component: {fileID: 8113840018718710509}
   - component: {fileID: 7701311912685362197}
   - component: {fileID: 4057705530667408842}
-  - component: {fileID: 2636851417149183645}
   m_Layer: 5
   m_Name: CoinFinishAnimation
   m_TagString: Untagged

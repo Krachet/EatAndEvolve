@@ -1,5 +1,5 @@
 using DG.Tweening;
-using MarchingBytes;
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -72,6 +72,7 @@ public class MainMenu : Singleton<MainMenu>
         playerLM = GameObject.FindGameObjectWithTag("Player").GetComponent<LevelManager>();
         animator = GetComponent<Animator>();
         initialPos = player.transform.position;
+        startGame.onClick.AddListener(() => StartGame());
         PlayerPrefsInit();
         OnInit();
     }
@@ -149,7 +150,6 @@ public class MainMenu : Singleton<MainMenu>
         goldText.text = gold.ToString();
         diamondText.text = diamond.ToString();
         joystickPanel.gameObject.SetActive(false);
-        startGame.onClick.AddListener(() => StartGame());
     }
 
     private void Update()
